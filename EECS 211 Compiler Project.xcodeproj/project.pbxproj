@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3221C32A157C81C800D5A042 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3221C329157C81C800D5A042 /* main.cpp */; };
 		3221C32C157C81C800D5A042 /* EECS_211_Compiler_Project.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3221C32B157C81C800D5A042 /* EECS_211_Compiler_Project.1 */; };
+		3221C339157C81D800D5A042 /* symbol_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3221C332157C81D800D5A042 /* symbol_list.cpp */; };
+		3221C33A157C81D800D5A042 /* symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3221C333157C81D800D5A042 /* symbols.cpp */; };
+		3221C33B157C81D800D5A042 /* system_utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3221C334157C81D800D5A042 /* system_utilities.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +29,15 @@
 
 /* Begin PBXFileReference section */
 		3221C325157C81C800D5A042 /* EECS 211 Compiler Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "EECS 211 Compiler Project"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3221C329157C81C800D5A042 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3221C329157C81C800D5A042 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "EECS 211 Compiler Project/main.cpp"; sourceTree = "<group>"; };
 		3221C32B157C81C800D5A042 /* EECS_211_Compiler_Project.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = EECS_211_Compiler_Project.1; sourceTree = "<group>"; };
+		3221C332157C81D800D5A042 /* symbol_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symbol_list.cpp; sourceTree = "<group>"; };
+		3221C333157C81D800D5A042 /* symbols.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symbols.cpp; sourceTree = "<group>"; };
+		3221C334157C81D800D5A042 /* system_utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system_utilities.cpp; sourceTree = "<group>"; };
+		3221C335157C81D800D5A042 /* definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		3221C336157C81D800D5A042 /* symbol_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbol_list.h; sourceTree = "<group>"; };
+		3221C337157C81D800D5A042 /* symbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbols.h; sourceTree = "<group>"; };
+		3221C338157C81D800D5A042 /* system_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system_utilities.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 		3221C31A157C81C700D5A042 = {
 			isa = PBXGroup;
 			children = (
+				32932B7B157C825900E8853E /* Header Files */,
+				32932B79157C824400E8853E /* Source Files */,
 				3221C328157C81C800D5A042 /* EECS 211 Compiler Project */,
 				3221C326157C81C800D5A042 /* Products */,
 			);
@@ -60,10 +72,31 @@
 		3221C328157C81C800D5A042 /* EECS 211 Compiler Project */ = {
 			isa = PBXGroup;
 			children = (
-				3221C329157C81C800D5A042 /* main.cpp */,
 				3221C32B157C81C800D5A042 /* EECS_211_Compiler_Project.1 */,
 			);
 			path = "EECS 211 Compiler Project";
+			sourceTree = "<group>";
+		};
+		32932B79157C824400E8853E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3221C329157C81C800D5A042 /* main.cpp */,
+				3221C332157C81D800D5A042 /* symbol_list.cpp */,
+				3221C333157C81D800D5A042 /* symbols.cpp */,
+				3221C334157C81D800D5A042 /* system_utilities.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		32932B7B157C825900E8853E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3221C335157C81D800D5A042 /* definitions.h */,
+				3221C336157C81D800D5A042 /* symbol_list.h */,
+				3221C337157C81D800D5A042 /* symbols.h */,
+				3221C338157C81D800D5A042 /* system_utilities.h */,
+			);
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3221C32A157C81C800D5A042 /* main.cpp in Sources */,
+				3221C339157C81D800D5A042 /* symbol_list.cpp in Sources */,
+				3221C33A157C81D800D5A042 /* symbols.cpp in Sources */,
+				3221C33B157C81D800D5A042 /* system_utilities.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +239,7 @@
 				3221C331157C81C800D5A042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
